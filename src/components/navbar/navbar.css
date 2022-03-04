@@ -4,12 +4,26 @@
     height : 15vh;
     background-color: blueviolet;
 }
-.logoimage{
+.profile{
     border-radius: 100%;
     object-fit: cover;
     padding: 10px;
 }
+.logoimage{
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 10px;
+    margin-left: 570px;
+}
 .box{
     display: flex;
     flex-direction: row;
+}
+.notificationicon{
+    margin-left: 370px;
+    margin-top: 30px;
+}
+.walleticon{
+    margin-top: 30px;
+    margin-left: 90px;
 }
