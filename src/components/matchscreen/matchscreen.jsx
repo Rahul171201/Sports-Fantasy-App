@@ -1,22 +1,40 @@
 import React from 'react';
 import './matchscreen.css';
-import { CCarousel, CCarouselItem, CImage } from '@coreui/react'
-import CardCarousel from "./Carousel/index";
-import { CarouselContainer } from "./styles.js";
-
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function matchscreen() {
     return (
         <div className='box'>
             <div className='newsbox'>
-                <CarouselContainer>
-                    <h1> Carousel </h1>
-
-                    <CardCarousel />
-                </CarouselContainer>
+                <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
+                    <div className="slideimage">
+                        <img  src="/slideimage1.png" alt="img1"/>
+                    </div>
+                    <div className="slideimage">
+                        <img src="/slideimage2.jpg" alt="img2"/>
+                    </div>
+                    <div className="slideimage">
+                        <img  src="/slideimage3.png" alt="img3"/>
+                    </div>
+                    <div className="slideimage">
+                        <img src="/slideimage4.jpg" alt="img4"/>
+                    </div>
+                </Carousel>
             </div>
             <div className='matchbox'>
-                noice
+                <div className='match'>
+                    
+                </div>
+                <div className='match'>
+                    
+                </div>
+                <div className='match'>
+                    
+                </div>
+                <div className='match'>
+                    
+                </div>
             </div>
         </div>
     )
