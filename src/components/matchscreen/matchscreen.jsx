@@ -24,16 +24,16 @@ export default function matchscreen() {
             </div>
             <div className='matchbox'>
                 <div className='match'>
-                    
+                    rahul
                 </div>
                 <div className='match'>
-                    
+                    is
                 </div>
                 <div className='match'>
-                    
+                    super                    
                 </div>
                 <div className='match'>
-                    
+                    op
                 </div>
             </div>
         </div>
