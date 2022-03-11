@@ -13,8 +13,6 @@ function App() {
           <Matchscreen></Matchscreen>
         </div>
       </div>
-
-
     </div>
   );
 }

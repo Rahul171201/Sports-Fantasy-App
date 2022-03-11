@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import './matchscreen.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import moment from 'moment';
 
-export default function matchscreen() {
+export default function Matchscreen() {
+
+
+    let currentDate = moment();
+    let future = moment('2022-03-12 14:00:00');
+    let timeLeft = moment(future.diff(currentDate)).subtract("05:30:00", "hh:mm:ss").format("HH:mm:ss");
+    // console.log(timeLeft);
+
+    const [remainingTime, setRemainingTime] = useState(0);
+
+    React.useEffect(() => {
+        const timer = window.setInterval(() => {
+            setRemainingTime(timeLeft);
+        }, 1000);
+    
+        return () => window.clearInterval(timer);
+    });
+    console.log(remainingTime);
+
+
     return (
         <div className='box'>
             <div className='newsbox'>
@@ -41,7 +61,7 @@ export default function matchscreen() {
                         </div>
                         <div className='midportion'>
                             <div className='VS'>VS</div>
-                            <div className='time'>time</div>
+                            <div className='time'>{timeLeft}</div>
                         </div>
 
                         <div className='team2'>
@@ -66,17 +86,17 @@ export default function matchscreen() {
                     </div>
                     <div className='middlebar'>
                         <div className='team1'>
-                            <img className='imageteam1' src="/india.png" alt="team1"></img>
-                            <p className='teamname'>India</p>
+                            <img className='imageteam1' src="/austrailia.jpg" alt="team1"></img>
+                            <p className='teamname'>Austrailia</p>
                         </div>
                         <div className='midportion'>
                             <div className='VS'>VS</div>
-                            <div className='time'>time</div>
+                            <div className='time'>{timeLeft}</div>
                         </div>
 
                         <div className='team2'>
-                            <img className='imageteam2' src="/srilanka.webp" alt="team2"></img>
-                            <p className='teamname'>Srilanka</p>
+                            <img className='imageteam2' src="/pakistan.jpg" alt="team2"></img>
+                            <p className='teamname'>Pakistan</p>
                         </div>
                     </div>
                     <div className='bottombar'>
