@@ -1,21 +1,24 @@
 .box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .newsbox {
   display: flex;
   padding-top: 50px;
-  padding-left: 100px;
-  width: 1300px;
-  height: 400px;
+  height: 500px;
+  width: 90vw;
 }
 .slideimage {
   display: flex;
   height: 200px;
+  object-fit: contain;
 }
 .matchbox {
+  width: 100vw;
   position: relative;
-  top: -150px;
+  top: -250px;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -52,21 +55,25 @@
 .midportion{
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 40px;
+  width: 20vw;
+  margin-left: 10vw;
+  margin-top: 4vh;
 }
 .notificationicon1{
   position: relative;
   right: 10px;
   top: 10px;
   color: white;
+  cursor: pointer;
 }
 .middlebar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 .team1{
+  width: 20vw;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
@@ -74,6 +81,7 @@
   align-items: center;
 }
 .team2{
+  width: 20vw;
   display: flex;
   flex-direction: column;
   margin-right: 30px;
@@ -81,10 +89,10 @@
   align-items: center;
 }
 .imageteam1 {
-  height: 100px;
+  height: 50px;
 }
 .imageteam2 {
-  height: 100px;
+  height: 50px;
 }
 .VS{
   font-weight: bold;

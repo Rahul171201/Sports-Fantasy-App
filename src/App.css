@@ -1,15 +1,15 @@
 .App {
-
+ 
 }
 .mainbox{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 97vw;
   height: 100vh;
 }
 .navbar{
-  width: 100%;
+  
   height: 15%;
 }
 .matchscreen{
